@@ -8,7 +8,6 @@ public class App
     {    
         Scanner scan = new Scanner(System.in); 
         char cont;
-
         do {
             cont = '_';
             System.out.print("Please enter a value for x: ");
@@ -16,7 +15,7 @@ public class App
     
             System.out.print("Please enter a value for n: ");
             int n = Integer.parseInt(scan.nextLine());
-    
+
             System.out.print("The value of x^n is... ");
             System.out.println(power(x, n));
             
@@ -46,7 +45,6 @@ public class App
             rawInput = rawInput.toLowerCase();
             command = rawInput.charAt(0);
         }
-
         return command;
     }
 
@@ -63,7 +61,6 @@ public class App
         }
 
         float result = x*power(x, n-1);
-        //System.out.println("DEBUG PRINT: RESULT, X, N: " + String.valueOf(result) + ", " + String.valueOf(x) + ", " + String.valueOf(n));
         return result;
     }
 }
