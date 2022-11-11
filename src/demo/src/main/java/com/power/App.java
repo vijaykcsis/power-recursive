@@ -6,8 +6,7 @@ public class App
 {
     public static void main( String[] args )
     {    
-        Scanner scan = new Scanner(System.in);
-        
+        Scanner scan = new Scanner(System.in); 
         char cont;
 
         do {
@@ -41,7 +40,6 @@ public class App
 
     private static Character menuGetCommand(Scanner scan) {
         Character command = '_';
-
         String rawInput = scan.nextLine();
 
         if (rawInput.length() > 0) {
@@ -53,7 +51,6 @@ public class App
     }
 
     public static float power(float x, int n) {
-
         if ((n == 0 && x == 0f) || (n < 0)) {
             System.out.println("ERROR: Undefined, returning -1.");
             return -1;
